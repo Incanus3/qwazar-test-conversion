@@ -1,0 +1,80 @@
+### Servisni soubory
+
+# Soubor kam spring zapisuje pri startu cislo procesu
+application.pid
+
+# Komponenty
+
+/build
+/core/build
+/core/utils/build
+/core/models/build
+/core/db/build
+/core/spring-support/build
+/core/rest/build
+/ea/build
+/ea/core/build
+/ea/db/build
+/ea/legacy/build
+/ea/cloud/build
+/ea/models/build
+/backend-apps/build
+/backend-apps/base/build
+/backend-apps/files/build
+/backend-apps/background-jobs/build
+/backend-apps/rendering/build
+/backend-apps/registries/build
+/backend-apps/reports/build
+/backend-apps/json-api/build
+/backend-apps/import-export/build
+/backend-apps/security/build
+/backend-apps/auditing/build
+/backend-apps/events/build
+/backend-apps/admin/build
+/backend-apps/integration/build
+/backends/build
+/backends/demo/build
+/backends/kb/build
+/backends/csob/build
+/backends/mpss/build
+/frontend/build/
+
+/qwazar-scripts/venv/*
+
+# Logy
+
+/logs
+*.log
+
+# IDEcka - pomocne soubory, ktere vytvari vyvojova prostredi a editory.
+
+## Gradle
+.gradle
+
+## Yarn
+.yarn
+
+## Idea
+/.idea
+*.iws
+out/
+/.idea_modules
+.idea/httpRequests
+*.hprof
+
+## Eclipse
+/.project
+/.settings
+/.classpath
+
+## Vscode
+.vscode/
+/bin/
+/null/
+*.iml
+
+## Vim
+*.swp
+*.un~
+
+.attach_pid*

@@ -1,0 +1,36 @@
+<configuration scan="true" scanPeriod="10 seconds">
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>WARN</level>
+    </filter>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="WARN">
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+  <logger name="io.ebean" level="WARN"/>
+
+  <!-- docker containers -->
+  <logger name="io.ebean.docker" level="WARN"/>
+
+  <!-- ddl -->
+  <logger name="io.ebean.DDL" level="WARN"/>
+
+  <!-- sql and transaction logging -->
+  <logger name="io.ebean.SQL" level="WARN"/>
+  <logger name="io.ebean.TXN" level="WARN"/>
+  <!-- <logger name="io.ebean.SUM" level="WARN"/> -->
+
+  <!-- l2 cache logging -->
+  <logger name="io.ebean.cache.QUERY" level="WARN"/>
+  <logger name="io.ebean.cache.BEAN" level="WARN"/>
+  <logger name="io.ebean.cache.COLL" level="WARN"/>
+  <logger name="io.ebean.cache.NATKEY" level="WARN"/>
+
+  <!-- elasticSearch query logging -->
+  <!--<logger name="io.ebean.ELA" level="WARN"/>-->
+</configuration>
